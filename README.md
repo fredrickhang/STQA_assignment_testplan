@@ -1,0 +1,1 @@
+# STQA_assignment_testplan
