@@ -1,0 +1,3 @@
+userType,jobType,jobProcesser,useGPU,userResource
+s,short,16,y,5
+r,l,36,n,5
