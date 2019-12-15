@@ -1,3 +1,3 @@
 userType,jobType,jobProcesser,useGPU,userResource
-s,short,16,y,5
-r,l,36,n,5
+Ss,short,16,y,89
+lr,short,32,n,55

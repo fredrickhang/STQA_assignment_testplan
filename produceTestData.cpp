@@ -1,6 +1,8 @@
 #include <fstream>
 #include <iostream>
 #include<string>
+#include<random>
+#include <time.h>
 using namespace std;
 
 
@@ -12,7 +14,7 @@ void produceTestData() {
 	fs << "userType" << "," << "jobType" <<","<<"jobProcesser"<<","<<"useGPU"<<","<<"userResource"<< endl;
 	string input;
 	string usertype;
-
+	int r;
 	int tag=1;
 	while (true) {
 		cout << "please input data, if you want to quit, please input 'q'" << endl;
@@ -36,8 +38,9 @@ void produceTestData() {
 			break;
 		case 5:
 			tag++;
-
-			fs << "5" << endl;
+			srand((unsigned)time(NULL));
+			r = rand() % (100 - 1) + 1;
+			fs << r << endl;
 		default:
 			cout << "continue add data?(y or q):" << endl;
 			
